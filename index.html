@@ -8,11 +8,13 @@
   </head>
   <body>
     <h1>Race Registration</h1>
-    <form>
-      <label for="first-name">First Name</label>
-      <input type="text" name="first-name" id="first-name" required />
-      <label for="last-name">Last Name</label>
-      <input type="text" name="last-name" id="last-name" required />
+    <form action="">
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" name="firstname" id="first-name" required />
+        <label for="last-name">Last Name</label>
+        <input type="text" name="lastname" id="last-name" required />
+      </div>
       <p>Select a Race:</p>
       <div>
         <input type="radio" name="race" id="fun-run-5k" value="fun-run-5k" />
@@ -44,10 +46,10 @@
       <div>
         <label for="age">Select Age Group</label>
         <select name="age" id="age">
-          <option value=">18">under 18</option>
-          <option value="18-30">18-30</option>
-          <option value="30-50">30-50</option>
-          <option value="+50">+50</option>
+          <option value="kids">under 18</option>
+          <option value="ya">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">+50</option>
         </select>
       </div>
       <button type="submit">Register</button>
