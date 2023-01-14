@@ -8,9 +8,28 @@ body {
 
 button {
   padding: 10px 20px;
+  color: white;
+  background-color: black;
   margin: 20px 0;
   border-radius: 12px;
   font-size: 16px;
+}
+button:hover {
+  background-color: gray;
+  transition: ease-in-out 0.2s;
+}
+input {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+}
+input:checked {
+  border: 6px solid black;
 }
 
 select {
