@@ -31,7 +31,16 @@ input {
 input:checked {
   border: 6px solid black;
 }
-
+.input-container label {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  transition: 0.6s;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  transform: translateX(-13px) translateY(-35px);
+}
 select {
   appearance: none;
   background-color: transparent;
@@ -58,7 +67,7 @@ select {
   height: 40px;
   position: relative;
   width: 100%;
-  margin: 10px 0 20px 0;
+  margin: 30px 0 20px 0;
 }
 
 .input-select {
