@@ -1,26 +1,48 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #e8e8ea;
   font-family: "Roboto", sans-serif;
+  margin: 30px;
 }
 
 button {
   padding: 10px 20px;
   color: white;
   background-color: black;
-  margin: 20px 0;
+  margin: 10px 0;
   border-radius: 12px;
   font-size: 16px;
   width: 50%;
   box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.2);
 }
 button:hover {
-  background-color: gray;
-  border: 2px solid gray;
+  background-color: rgb(197, 194, 194);
+  color: #000;
+  border: 2px solid rgb(197, 194, 194);
   transition: ease-in-out 0.2s;
 }
+
+footer {
+  font-size: 14px;
+  margin: 5px;
+}
+
+h1 {
+  margin: 0;
+}
+
 input {
   appearance: none;
   border-radius: 50%;
@@ -30,6 +52,21 @@ input {
   transition: 0.2s all linear;
   margin-right: 5px;
   position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 12px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+
+input:checked {
+  border: 6px solid black;
 }
 
 select {
@@ -46,9 +83,6 @@ select {
   line-height: inherit;
 }
 
-input:checked {
-  border: 6px solid black;
-}
 .input-container label {
   position: absolute;
   top: 11px;
@@ -74,15 +108,4 @@ input:checked {
   position: relative;
   width: 100%;
   margin: 30px 0 20px 0;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  border-radius: 12px;
-  border: 2px solid #000;
-  box-sizing: border-box;
-  height: 100%;
-  padding: 10px;
-  width: 100%;
 }
