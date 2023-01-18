@@ -31,19 +31,7 @@ input {
   margin-right: 5px;
   position: relative;
 }
-input:checked {
-  border: 6px solid black;
-}
-.input-container label {
-  position: absolute;
-  top: 11px;
-  left: 20px;
-  transition: 0.6s;
-}
-.input-container input:focus ~ label,
-.input-container input:valid ~ label {
-  transform: translateX(-13px) translateY(-35px);
-}
+
 select {
   appearance: none;
   background-color: transparent;
@@ -58,7 +46,21 @@ select {
   line-height: inherit;
 }
 
-.form {
+input:checked {
+  border: 6px solid black;
+}
+.input-container label {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  transition: 0.6s;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  transform: translateX(-13px) translateY(-35px);
+}
+
+.form-box {
   background-color: white;
   border-radius: 20px;
   box-sizing: border-box;
@@ -74,19 +76,13 @@ select {
   margin: 30px 0 20px 0;
 }
 
-.input-select {
-  margin: 10px 0 20px 0;
-}
-
-.input-text {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   border-radius: 12px;
   border: 2px solid #000;
   box-sizing: border-box;
   height: 100%;
   padding: 10px;
   width: 100%;
-}
-
-input[type="text"] {
-  color: red;
 }
